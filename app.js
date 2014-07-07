@@ -60,8 +60,8 @@ app.use(function(err, req, res, next) {
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
-server.listen(3000, function(){
-  console.log('listening on *:3000');
+server.listen(port, function(){
+  console.log('listening on ' + port);
 });
 
 // A user connects to the server (opens a socket)
