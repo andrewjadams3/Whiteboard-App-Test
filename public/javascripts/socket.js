@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost');
+var socket = io.connect(window.location.hostname);
 
 // (1): Send a ping event with 
 // some data to the server
