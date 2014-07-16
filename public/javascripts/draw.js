@@ -33,9 +33,13 @@ function drawPath(x, y) {
 }
 
 socket.on('startPath', function(x, y) {
-  startPath(x, y)
+  startPath(x, y);
+  console.log("Received Start Path");
+  paper.view.draw();
 })
 
 socket.on('drawPath', function(x, y) {
-  drawPath(x, y)
+  drawPath(x, y);
+  console.log("Received drawPath");
+  paper.view.draw();
 })
